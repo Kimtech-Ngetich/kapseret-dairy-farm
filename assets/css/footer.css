@@ -1,0 +1,385 @@
+/* ==========================================================
+   KAPSERET DAIRY FARM MANAGEMENT SYSTEM (KDFMS)
+   FOOTER.CSS
+   Version: 1.0
+========================================================== */
+
+
+/* ==========================================================
+   FOOTER CONTAINER
+========================================================== */
+
+.footer{
+
+    margin-top:40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #198754 0%,
+            #157347 45%,
+            #0f5132 100%
+        );
+
+    color:#ffffff;
+
+    border-radius:20px 20px 0 0;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 -8px 30px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================================================
+   FOOTER CONTENT
+========================================================== */
+
+.footer-content{
+
+    padding:35px;
+
+}
+
+
+/* ==========================================================
+   FOOTER GRID
+========================================================== */
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:30px;
+
+}
+
+
+/* ==========================================================
+   BRAND
+========================================================== */
+
+.footer-brand img{
+
+    width:65px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-brand h4{
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.footer-brand p{
+
+    opacity:.90;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================================
+   FOOTER TITLES
+========================================================== */
+
+.footer-title{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+
+/* ==========================================================
+   FOOTER LINKS
+========================================================== */
+
+.footer-links{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+}
+
+.footer-links li{
+
+    margin-bottom:10px;
+
+}
+
+.footer-links a{
+
+    color:rgba(255,255,255,.88);
+
+    transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+    color:#ffffff;
+
+    padding-left:8px;
+
+}
+
+
+/* ==========================================================
+   CONTACT ITEMS
+========================================================== */
+
+.footer-contact{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:12px;
+
+    margin-bottom:15px;
+
+}
+
+.footer-contact i{
+
+    font-size:18px;
+
+    margin-top:2px;
+
+}
+
+
+/* ==========================================================
+   SOCIAL ICONS
+========================================================== */
+
+.footer-social{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.15);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#fff;
+
+    transition:.35s;
+
+}
+
+.footer-social a:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+    transform:
+        translateY(-4px)
+        rotate(8deg);
+
+}
+
+
+/* ==========================================================
+   FOOTER DIVIDER
+========================================================== */
+
+.footer-divider{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+}
+
+
+/* ==========================================================
+   FOOTER BOTTOM
+========================================================== */
+
+.footer-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    padding:18px 35px;
+
+    font-size:14px;
+
+    color:rgba(255,255,255,.88);
+
+}
+
+
+/* ==========================================================
+   VERSION BADGE
+========================================================== */
+
+.version-badge{
+
+    background:rgba(255,255,255,.15);
+
+    padding:6px 14px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   COPYRIGHT
+========================================================== */
+
+.copyright{
+
+    opacity:.90;
+
+}
+
+
+/* ==========================================================
+   FOOTER BUTTON
+========================================================== */
+
+.back-top{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#ffffff;
+
+    color:var(--primary);
+
+    transition:.35s;
+
+}
+
+.back-top:hover{
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+
+}
+
+
+/* ==========================================================
+   STATUS BAR
+========================================================== */
+
+.footer-status{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+    background:#00ff66;
+
+    box-shadow:
+        0 0 12px #00ff66;
+
+}
+
+
+/* ==========================================================
+   DEVELOPER CREDIT
+========================================================== */
+
+.developer{
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================================
+   FOOTER ANIMATION
+========================================================== */
+
+.footer{
+
+    animation:
+        footerFade .8s ease;
+
+}
+
+@keyframes footerFade{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

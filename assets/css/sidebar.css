@@ -1,0 +1,586 @@
+/* ==========================================================
+   KDFMS - SIDEBAR.CSS
+   Professional Sidebar
+   Version: 1.0
+========================================================== */
+
+/* ==========================================================
+   SIDEBAR
+========================================================== */
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:270px;
+
+    height:100vh;
+
+    background:linear-gradient(
+        180deg,
+        #198754 0%,
+        #157347 45%,
+        #0f5132 100%
+    );
+
+    color:#fff;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    z-index:1050;
+
+    transition:all .35s ease;
+
+    box-shadow:5px 0 25px rgba(0,0,0,.15);
+
+}
+
+/* Scrollbar */
+
+.sidebar::-webkit-scrollbar{
+    width:6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:rgba(255,255,255,.25);
+    border-radius:20px;
+}
+
+/* ==========================================================
+   BRAND SECTION
+========================================================== */
+
+.sidebar-brand{
+
+    padding:25px 20px;
+
+    text-align:center;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+}
+
+.sidebar-brand img{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+    margin-bottom:12px;
+
+}
+
+.sidebar-brand h3{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    margin-bottom:4px;
+
+}
+
+.sidebar-brand span{
+
+    font-size:14px;
+
+    opacity:.85;
+
+}
+
+/* ==========================================================
+   USER PANEL
+========================================================== */
+
+.sidebar-user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:20px;
+
+    border-bottom:1px solid rgba(255,255,255,.10);
+
+}
+
+.sidebar-user-avatar{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.20);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:24px;
+
+}
+
+.sidebar-user-info h6{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+.sidebar-user-info small{
+
+    opacity:.80;
+
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.sidebar-nav{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:20px 12px;
+
+}
+
+.sidebar-nav li{
+
+    margin-bottom:8px;
+
+    position:relative;
+
+}
+
+.sidebar-nav li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    color:#ffffff !important;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:all .30s ease;
+
+}
+
+.sidebar-nav li a span{
+
+    color:#ffffff !important;
+
+}
+
+.sidebar-nav li a i{
+
+    width:24px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    color:#ffffff !important;
+
+}
+
+.sidebar-nav li a:hover{
+
+    background:rgba(255,255,255,.18);
+
+    transform:translateX(6px);
+
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+
+}
+
+.sidebar-nav li a.active{
+
+    background:#ffffff;
+
+    color:#198754 !important;
+
+    font-weight:700;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.sidebar-nav li a.active span,
+
+.sidebar-nav li a.active i{
+
+    color:#198754 !important;
+
+}
+
+.sidebar-nav li a.active::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-12px;
+
+    top:8px;
+
+    bottom:8px;
+
+    width:5px;
+
+    border-radius:20px;
+
+    background:#ffffff;
+
+}
+
+/* ==========================================================
+   MENU BADGE
+========================================================== */
+
+.menu-badge{
+
+    margin-left:auto;
+
+    background:#ffc107;
+
+    color:#212529;
+
+    padding:3px 9px;
+
+    border-radius:30px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   DROPDOWN MENU
+========================================================== */
+
+.sidebar-dropdown{
+
+    display:none;
+
+    margin-top:8px;
+
+    margin-left:18px;
+
+}
+
+.sidebar-dropdown a{
+
+    font-size:14px;
+
+    padding:11px 18px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.sidebar-dropdown.show{
+
+    display:block;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.sidebar-footer{
+
+    margin-top:auto;
+
+    padding:20px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.10);
+
+}
+
+.sidebar-footer p{
+
+    margin:4px 0;
+
+    font-size:13px;
+
+}
+
+.sidebar-footer small{
+
+    opacity:.75;
+
+}
+
+/* ==========================================================
+   COLLAPSED SIDEBAR
+========================================================== */
+
+.sidebar.collapsed{
+
+    width:85px;
+
+}
+
+.sidebar.collapsed .sidebar-brand h3,
+.sidebar.collapsed .sidebar-brand span,
+.sidebar.collapsed .sidebar-user-info,
+.sidebar.collapsed .sidebar-title,
+.sidebar.collapsed .menu-badge,
+.sidebar.collapsed .sidebar-footer{
+
+    display:none;
+
+}
+
+.sidebar.collapsed .sidebar-nav a{
+
+    justify-content:center;
+
+    padding:15px;
+
+}
+
+.sidebar.collapsed .sidebar-nav a span{
+
+    display:none;
+
+}
+
+.sidebar.collapsed + .main-content{
+
+    margin-left:85px;
+
+}
+
+/* ==========================================================
+   LOGOUT
+========================================================== */
+
+.sidebar-logout{
+
+    margin:20px 12px;
+
+}
+
+.sidebar-logout a{
+
+    background:rgba(220,53,69,.18);
+
+    color:#fff;
+
+    border-radius:14px;
+
+}
+
+.sidebar-logout a:hover{
+
+    background:#dc3545;
+
+    color:#fff;
+
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+.sidebar{
+
+    animation:slideSidebar .5s ease;
+
+}
+
+@keyframes slideSidebar{
+
+    from{
+
+        transform:translateX(-100%);
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+    }
+
+}
+.sidebar-menu{
+
+    list-style:none;
+
+    margin:20px 0;
+
+    padding:0;
+
+}
+
+.sidebar-menu li{
+
+    margin:8px 12px;
+
+}
+
+.sidebar-menu li a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    color:#fff !important;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    font-weight:600;
+
+    font-size:15px;
+
+}
+
+.sidebar-menu li a span{
+
+    color:#fff !important;
+
+}
+
+.sidebar-menu li a i{
+
+    color:#fff !important;
+
+    width:24px;
+
+    text-align:center;
+
+    font-size:20px;
+
+}
+
+.sidebar-menu li a:hover{
+
+    background:rgba(255,255,255,.18);
+
+    transform:translateX(6px);
+
+}
+
+.sidebar-menu li a.active{
+
+    background:#fff;
+
+    color:#198754 !important;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.20);
+
+}
+
+.sidebar-menu li a.active i,
+
+.sidebar-menu li a.active span{
+
+    color:#198754 !important;
+
+}
+.sidebar-logo{
+
+    width:70px;
+
+    height:70px;
+
+    object-fit:contain;
+
+    margin-bottom:12px;
+
+}
+
+.sidebar-user-info h6{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:15px;
+
+}
+
+.sidebar-user-info small{
+
+    color:rgba(255,255,255,.8);
+
+}
+
+.sidebar-logout{
+
+    margin:20px 12px;
+
+}
+
+.sidebar-logout a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    background:rgba(220,53,69,.18);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.sidebar-logout a:hover{
+
+    background:#dc3545;
+
+}

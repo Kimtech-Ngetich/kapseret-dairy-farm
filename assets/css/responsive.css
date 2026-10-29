@@ -1,0 +1,386 @@
+/* ==========================================================
+   KDFMS - RESPONSIVE.CSS
+   Responsive Design
+   Version: 1.0
+========================================================== */
+
+/* ==========================================================
+   LARGE SCREENS (1400px+)
+========================================================== */
+
+@media (min-width:1400px){
+
+    .container-fluid{
+        max-width:1600px;
+        margin:auto;
+    }
+
+}
+
+/* ==========================================================
+   LAPTOPS (1200px)
+========================================================== */
+
+@media (max-width:1200px){
+
+    .dashboard-wrapper{
+        padding:25px;
+    }
+
+    .kpi-card h2{
+        font-size:30px;
+    }
+
+}
+
+/* ==========================================================
+   TABLETS
+========================================================== */
+
+@media (max-width:992px){
+
+    /* Sidebar */
+
+    .sidebar{
+
+        left:-270px;
+
+        transition:.35s;
+
+    }
+
+    .sidebar.show{
+
+        left:0;
+
+    }
+
+    /* Main Content */
+
+    .main-content{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+    /* Topbar */
+
+    .topbar{
+
+        padding:18px;
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+    }
+
+    .top-search{
+
+        width:100%;
+
+    }
+
+    .page-info h3{
+
+        font-size:22px;
+
+    }
+
+    /* Dashboard */
+
+    .dashboard-wrapper{
+
+        padding:20px;
+
+    }
+
+    .quick-actions{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+    /* Footer */
+
+    .footer-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+}
+
+/* ==========================================================
+   SMALL TABLETS
+========================================================== */
+
+@media (max-width:768px){
+
+    /* Cards */
+
+    .kpi-card{
+
+        margin-bottom:20px;
+
+    }
+
+    .dashboard-panel{
+
+        margin-bottom:20px;
+
+    }
+
+    /* Quick Actions */
+
+    .quick-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+    /* Search */
+
+    .table-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .table-search{
+
+        width:100%;
+
+    }
+
+    /* Footer */
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+        gap:15px;
+
+        text-align:center;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE PHONES
+========================================================== */
+
+@media (max-width:576px){
+
+    body{
+
+        font-size:14px;
+
+    }
+
+    /* Sidebar */
+
+    .sidebar{
+
+        width:250px;
+
+    }
+
+    /* Topbar */
+
+    .topbar{
+
+        padding:15px;
+
+    }
+
+    .page-info h3{
+
+        font-size:20px;
+
+    }
+
+    .page-info p{
+
+        font-size:13px;
+
+    }
+
+    .user-details{
+
+        display:none;
+
+    }
+
+    .top-search{
+
+        width:100%;
+
+    }
+
+    /* Dashboard */
+
+    .dashboard-wrapper{
+
+        padding:15px;
+
+    }
+
+    .kpi-card{
+
+        padding:20px;
+
+    }
+
+    .kpi-card h2{
+
+        font-size:28px;
+
+    }
+
+    .kpi-card i{
+
+        font-size:38px;
+
+    }
+
+    /* Tables */
+
+    .table{
+
+        min-width:700px;
+
+    }
+
+    .table-responsive{
+
+        overflow-x:auto;
+
+    }
+
+    /* Forms */
+
+    .form-card{
+
+        padding:20px;
+
+    }
+
+    .form-header{
+
+        padding:18px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        margin-bottom:10px;
+
+    }
+
+    /* Footer */
+
+    .footer-content{
+
+        padding:25px;
+
+    }
+
+}
+
+/* ==========================================================
+   EXTRA SMALL DEVICES
+========================================================== */
+
+@media (max-width:420px){
+
+    .dashboard-title{
+
+        font-size:22px;
+
+    }
+
+    .kpi-card h2{
+
+        font-size:24px;
+
+    }
+
+    .notification-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .user-avatar{
+
+        width:42px;
+
+        height:42px;
+
+    }
+
+}
+
+/* ==========================================================
+   LANDSCAPE PHONES
+========================================================== */
+
+@media (max-height:500px){
+
+    .sidebar{
+
+        overflow-y:auto;
+
+    }
+
+}
+
+/* ==========================================================
+   PRINT MODE
+========================================================== */
+
+@media print{
+
+    .sidebar,
+    .topbar,
+    .footer,
+    .btn,
+    .table-actions{
+
+        display:none !important;
+
+    }
+
+    body{
+
+        background:#fff;
+
+    }
+
+    .main-content{
+
+        margin:0;
+
+        width:100%;
+
+    }
+
+}

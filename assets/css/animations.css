@@ -1,0 +1,553 @@
+/* ==========================================================
+   KDFMS - ANIMATIONS.CSS
+   Professional UI Animations
+   Version: 1.0
+========================================================== */
+
+/* ==========================================================
+   FADE IN
+========================================================== */
+
+.fade-in{
+    animation:fadeIn .6s ease forwards;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+/* ==========================================================
+   FADE UP
+========================================================== */
+
+.fade-up{
+    animation:fadeUp .6s ease forwards;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ==========================================================
+   SLIDE LEFT
+========================================================== */
+
+.slide-left{
+    animation:slideLeft .6s ease forwards;
+}
+
+@keyframes slideLeft{
+
+    from{
+        opacity:0;
+        transform:translateX(-40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* ==========================================================
+   SLIDE RIGHT
+========================================================== */
+
+.slide-right{
+    animation:slideRight .6s ease forwards;
+}
+
+@keyframes slideRight{
+
+    from{
+        opacity:0;
+        transform:translateX(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+
+}
+
+/* ==========================================================
+   SCALE IN
+========================================================== */
+
+.scale-in{
+    animation:scaleIn .45s ease;
+}
+
+@keyframes scaleIn{
+
+    from{
+        opacity:0;
+        transform:scale(.85);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================================================
+   BOUNCE
+========================================================== */
+
+.bounce{
+    animation:bounce 1.2s infinite;
+}
+
+@keyframes bounce{
+
+    0%,20%,50%,80%,100%{
+        transform:translateY(0);
+    }
+
+    40%{
+        transform:translateY(-10px);
+    }
+
+    60%{
+        transform:translateY(-5px);
+    }
+
+}
+
+/* ==========================================================
+   PULSE
+========================================================== */
+
+.pulse{
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================================================
+   ROTATE
+========================================================== */
+
+.rotate:hover{
+    transform:rotate(360deg);
+    transition:.8s;
+}
+
+/* ==========================================================
+   BUTTON HOVER
+========================================================== */
+
+.btn{
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 20px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================================
+   CARD HOVER
+========================================================== */
+
+.card,
+.dashboard-card,
+.kpi-card{
+
+    transition:
+        transform .35s,
+        box-shadow .35s;
+
+}
+
+.card:hover,
+.dashboard-card:hover,
+.kpi-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 18px 35px rgba(0,0,0,.15);
+
+}
+
+/* ==========================================================
+   TABLE ROW
+========================================================== */
+
+.table tbody tr{
+
+    transition:
+        background .3s,
+        transform .2s;
+
+}
+
+.table tbody tr:hover{
+
+    transform:scale(1.01);
+
+}
+
+/* ==========================================================
+   ICON HOVER
+========================================================== */
+
+.icon-hover{
+
+    transition:.3s;
+
+}
+
+.icon-hover:hover{
+
+    transform:scale(1.2);
+
+}
+
+/* ==========================================================
+   INPUT EFFECT
+========================================================== */
+
+.form-control,
+.form-select{
+
+    transition:
+        border-color .25s,
+        box-shadow .25s;
+
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    transform:scale(1.01);
+
+}
+
+/* ==========================================================
+   SPINNER
+========================================================== */
+
+.spinner{
+
+    width:45px;
+
+    height:45px;
+
+    border:4px solid #ddd;
+
+    border-top-color:var(--primary);
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* ==========================================================
+   ALERTS
+========================================================== */
+
+.alert{
+
+    animation:fadeDown .45s;
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   MODAL
+========================================================== */
+
+.modal-content{
+
+    animation:modalZoom .3s ease;
+
+}
+
+@keyframes modalZoom{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   DROPDOWN
+========================================================== */
+
+.dropdown-menu{
+
+    animation:dropdown .25s ease;
+
+}
+
+@keyframes dropdown{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-10px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   LOADING BAR
+========================================================== */
+
+.loading-bar{
+
+    width:100%;
+
+    height:4px;
+
+    overflow:hidden;
+
+    background:#e9ecef;
+
+}
+
+.loading-bar::after{
+
+    content:"";
+
+    display:block;
+
+    width:35%;
+
+    height:100%;
+
+    background:var(--primary);
+
+    animation:loading 1.2s infinite;
+
+}
+
+@keyframes loading{
+
+    from{
+        margin-left:-35%;
+    }
+
+    to{
+        margin-left:100%;
+    }
+
+}
+
+/* ==========================================================
+   SUCCESS CHECK
+========================================================== */
+
+.success-pop{
+
+    animation:successPop .4s ease;
+
+}
+
+@keyframes successPop{
+
+    0%{
+        transform:scale(.6);
+    }
+
+    70%{
+        transform:scale(1.1);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================================================
+   SHAKE (ERROR)
+========================================================== */
+
+.shake{
+
+    animation:shake .45s;
+
+}
+
+@keyframes shake{
+
+    0%{transform:translateX(0);}
+    20%{transform:translateX(-8px);}
+    40%{transform:translateX(8px);}
+    60%{transform:translateX(-6px);}
+    80%{transform:translateX(6px);}
+    100%{transform:translateX(0);}
+
+}
+
+/* ==========================================================
+   SKELETON LOADER
+========================================================== */
+
+.skeleton{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#f2f2f2;
+
+}
+
+.skeleton::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    transform:translateX(-100%);
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(255,255,255,.7),
+            transparent
+        );
+
+    animation:skeleton 1.3s infinite;
+
+}
+
+@keyframes skeleton{
+
+    to{
+
+        transform:translateX(100%);
+
+    }
+
+}
+
+/* ==========================================================
+   PAGE TRANSITION
+========================================================== */
+
+.page-transition{
+
+    animation:pageLoad .5s ease;
+
+}
+
+@keyframes pageLoad{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

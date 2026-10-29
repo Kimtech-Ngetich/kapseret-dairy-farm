@@ -1,0 +1,336 @@
+/* ==========================================================
+   KDFMS - TABLES.CSS
+   Professional Table Components
+   Version: 1.0
+========================================================== */
+
+/* ==========================================================
+   TABLE CONTAINER
+========================================================== */
+
+.table-card{
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    margin-bottom:30px;
+}
+
+.table-card-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 25px;
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--primary-light)
+    );
+    color:#fff;
+}
+
+.table-card-header h4{
+    margin:0;
+    font-weight:600;
+}
+
+.table-card-body{
+    padding:25px;
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.table{
+    margin-bottom:0;
+    vertical-align:middle;
+}
+
+.table thead{
+    background:#f8f9fa;
+}
+
+.table thead th{
+    border:none;
+    padding:16px;
+    font-weight:600;
+    color:var(--text);
+    text-transform:uppercase;
+    font-size:13px;
+    letter-spacing:.5px;
+}
+
+.table tbody td{
+    padding:15px;
+    border-color:#eef1f4;
+}
+
+.table tbody tr{
+    transition:.25s;
+}
+
+.table tbody tr:hover{
+    background:#f7fffb;
+}
+
+/* ==========================================================
+   TABLE STRIPES
+========================================================== */
+
+.table-striped tbody tr:nth-child(even){
+    background:#fcfcfc;
+}
+
+/* ==========================================================
+   TABLE IMAGE
+========================================================== */
+
+.table-avatar{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    border:2px solid #fff;
+    box-shadow:var(--shadow-sm);
+}
+
+/* ==========================================================
+   ACTION BUTTONS
+========================================================== */
+
+.table-actions{
+    display:flex;
+    gap:8px;
+}
+
+.table-actions .btn{
+    width:38px;
+    height:38px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+    border-radius:10px;
+}
+
+.table-actions .btn i{
+    margin:0;
+}
+
+/* ==========================================================
+   STATUS BADGES
+========================================================== */
+
+.badge-success{
+    background:#d1f7df;
+    color:#0f5132;
+}
+
+.badge-danger{
+    background:#fde2e4;
+    color:#842029;
+}
+
+.badge-warning{
+    background:#fff3cd;
+    color:#664d03;
+}
+
+.badge-info{
+    background:#cff4fc;
+    color:#055160;
+}
+
+.badge-primary{
+    background:#dbeafe;
+    color:#084298;
+}
+
+.status-badge{
+    padding:7px 14px;
+    border-radius:50px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* ==========================================================
+   SEARCH BAR
+========================================================== */
+
+.table-toolbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+    flex-wrap:wrap;
+}
+
+.table-search{
+    position:relative;
+    width:320px;
+}
+
+.table-search i{
+    position:absolute;
+    top:50%;
+    left:15px;
+    transform:translateY(-50%);
+    color:#999;
+}
+
+.table-search input{
+    padding-left:45px;
+    border-radius:12px;
+}
+
+/* ==========================================================
+   FILTER AREA
+========================================================== */
+
+.table-filters{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+/* ==========================================================
+   EMPTY STATE
+========================================================== */
+
+.empty-table{
+    padding:60px 20px;
+    text-align:center;
+    color:#6c757d;
+}
+
+.empty-table i{
+    font-size:60px;
+    color:#ced4da;
+    margin-bottom:15px;
+}
+
+.empty-table h5{
+    font-weight:600;
+}
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.pagination{
+    margin-top:25px;
+    justify-content:center;
+}
+
+.page-link{
+    border:none;
+    color:var(--primary);
+    border-radius:10px;
+    margin:0 4px;
+}
+
+.page-link:hover{
+    background:var(--primary);
+    color:#fff;
+}
+
+.page-item.active .page-link{
+    background:var(--primary);
+    border-color:var(--primary);
+}
+
+/* ==========================================================
+   SORT ICONS
+========================================================== */
+
+.sort-icon{
+    font-size:12px;
+    margin-left:5px;
+    color:#999;
+}
+
+/* ==========================================================
+   TABLE FOOTER
+========================================================== */
+
+.table-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 25px;
+    border-top:1px solid #eef1f4;
+    background:#fafafa;
+}
+
+/* ==========================================================
+   RESPONSIVE TABLE
+========================================================== */
+
+.table-responsive{
+    border-radius:15px;
+}
+/* ==========================================================
+   MANAGEMENT TABLE
+========================================================== */
+
+.table{
+
+    margin-bottom:0;
+
+}
+
+.table thead th{
+
+    background:linear-gradient(135deg,#15803d,#22c55e);
+
+    color:#fff;
+
+    border:none;
+
+    padding:16px;
+
+    font-weight:600;
+
+    vertical-align:middle;
+
+}
+
+.table tbody td{
+
+    padding:16px;
+
+    vertical-align:middle;
+
+}
+
+.table tbody tr{
+
+    transition:.25s;
+
+}
+
+.table tbody tr:hover{
+
+    background:#f5fff9;
+
+    transform:scale(1.002);
+
+}
+
+.table .btn{
+
+    margin:0 2px;
+
+}
+
+.table .badge{
+
+    font-size:13px;
+
+    padding:8px 12px;
+
+    border-radius:30px;
+
+}

@@ -1,0 +1,520 @@
+/* ==========================================================
+   KDFMS - DASHBOARD.CSS
+   Dashboard Components
+   Version 1.0
+========================================================== */
+
+/* ==========================================================
+   DASHBOARD WRAPPER
+========================================================== */
+
+.dashboard-wrapper{
+    padding:30px;
+}
+
+/* ==========================================================
+   PAGE TITLE
+========================================================== */
+
+.dashboard-title{
+    font-size:30px;
+    font-weight:700;
+    color:var(--text);
+}
+
+.dashboard-subtitle{
+    color:var(--text-light);
+    margin-bottom:30px;
+}
+
+/* ==========================================================
+   KPI CARD
+========================================================== */
+
+.kpi-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    color:#fff;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.kpi-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-30px;
+
+    top:-30px;
+
+    width:120px;
+
+    height:120px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:50%;
+
+}
+
+.kpi-card h6{
+
+    font-size:15px;
+
+    opacity:.9;
+
+    margin-bottom:12px;
+
+}
+
+.kpi-card h2{
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.kpi-card i{
+
+    position:absolute;
+
+    right:20px;
+
+    bottom:20px;
+
+    font-size:48px;
+
+    opacity:.25;
+
+}
+
+/* ==========================================================
+   KPI COLORS
+========================================================== */
+
+.kpi-green{
+    background:linear-gradient(135deg,#198754,#20c997);
+}
+
+.kpi-blue{
+    background:linear-gradient(135deg,#0d6efd,#4ea3ff);
+}
+
+.kpi-orange{
+    background:linear-gradient(135deg,#fd7e14,#ffc107);
+}
+
+.kpi-red{
+    background:linear-gradient(135deg,#dc3545,#ff6b81);
+}
+
+.kpi-purple{
+    background:linear-gradient(135deg,#6f42c1,#9d6bff);
+}
+
+/* ==========================================================
+   DASHBOARD PANELS
+========================================================== */
+
+.dashboard-panel{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:30px;
+
+    overflow:hidden;
+
+}
+
+.dashboard-panel-header{
+
+    padding:18px 25px;
+
+    border-bottom:1px solid #eef1f4;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.dashboard-panel-header h5{
+
+    margin:0;
+
+    font-weight:600;
+
+}
+
+.dashboard-panel-body{
+
+    padding:25px;
+
+}
+
+/* ==========================================================
+   CHART AREA
+========================================================== */
+
+.chart-box{
+
+    position:relative;
+
+    height:380px;
+
+}
+
+.chart-sm{
+
+    height:260px;
+
+}
+
+/* ==========================================================
+   QUICK ACTIONS
+========================================================== */
+
+.quick-actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
+
+}
+
+.quick-action{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.quick-action:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow);
+
+}
+
+.quick-action i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.quick-action h6{
+
+    font-weight:600;
+
+    margin-bottom:6px;
+
+}
+
+.quick-action p{
+
+    font-size:14px;
+
+    color:var(--text-light);
+
+    margin:0;
+
+}
+
+/* ==========================================================
+   ACTIVITY TIMELINE
+========================================================== */
+
+.timeline{
+
+    position:relative;
+
+    padding-left:30px;
+
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:8px;
+
+    top:0;
+
+    bottom:0;
+
+    width:3px;
+
+    background:#dfe8e3;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:25px;
+
+}
+
+.timeline-dot{
+
+    position:absolute;
+
+    left:-30px;
+
+    width:18px;
+
+    height:18px;
+
+    background:var(--primary);
+
+    border-radius:50%;
+
+    border:3px solid #fff;
+
+    box-shadow:0 0 0 3px rgba(25,135,84,.2);
+
+}
+
+.timeline-content{
+
+    background:#f9fbfa;
+
+    border-radius:15px;
+
+    padding:18px;
+
+}
+
+.timeline-time{
+
+    font-size:13px;
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================================
+   NOTIFICATIONS
+========================================================== */
+
+.notification-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+
+    padding:15px 0;
+
+    border-bottom:1px solid #f1f1f1;
+
+}
+
+.notification-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.notification-icon{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#e9f7ef;
+
+    color:var(--primary);
+
+    font-size:20px;
+
+}
+
+.notification-text h6{
+
+    margin:0;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.notification-text small{
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================================
+   MINI STATISTICS
+========================================================== */
+
+.mini-stat{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.mini-progress{
+
+    height:8px;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    background:#eef2f3;
+
+}
+
+.mini-progress-bar{
+
+    height:100%;
+
+    background:linear-gradient(90deg,var(--primary),var(--primary-light));
+
+}
+
+/* ==========================================================
+   FARM STATUS
+========================================================== */
+
+.status-widget{
+
+    text-align:center;
+
+    padding:25px;
+
+}
+
+.status-widget i{
+
+    font-size:55px;
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.status-widget h3{
+
+    font-weight:700;
+
+}
+
+.status-widget p{
+
+    color:var(--text-light);
+
+}
+
+/* ==========================================================
+   WEATHER / DATE CARD (OPTIONAL)
+========================================================== */
+
+.weather-widget{
+
+    background:linear-gradient(135deg,#4ea3ff,#0d6efd);
+
+    color:#fff;
+
+    border-radius:20px;
+
+    padding:25px;
+
+}
+
+.weather-widget h2{
+
+    font-size:42px;
+
+    margin-bottom:0;
+
+}
+
+.weather-widget small{
+
+    opacity:.9;
+
+}
+
+/* ==========================================================
+   DASHBOARD FOOTER
+========================================================== */
+
+.dashboard-footer{
+
+    text-align:center;
+
+    margin-top:40px;
+
+    color:var(--text-light);
+
+    font-size:14px;
+
+}
